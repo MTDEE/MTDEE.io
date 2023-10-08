@@ -1,0 +1,150 @@
+body{
+    background-image: linear-gradient(to right,#D2E0FB,#F9F3CC,#D7E5CA);
+    
+    }
+    
+    nav {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        background: #ffffff;
+        padding: 10px 40px;
+        border: solid 1px #020202;
+        border-radius: 10px;
+        display: block;
+        position: relative;
+        text-align: right; /* เพิ่มบรรทัดนี้ */
+        width: 100%; /* เพิ่มบรรทัดนี้ */
+      }
+     
+      
+     
+      nav a {
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        position: relative;
+        color: #020202;
+        
+        /* จัดให้อยู่กลางตามแนวนอน */
+        
+        transform: translateX(-50%);
+        display: inline-block; /* เพิ่มบรรทัดนี้ */
+    }
+    nav a::after{
+        content: '';
+        position: absolute;
+        width: 10%;
+        opacity: 0;
+        height: 5px;
+        background-image: linear-gradient(to right,#69ee41,#f8bebe);
+        bottom: -10px;
+        right: 3.5%;
+        transform: translate(-50%);
+        border-radius: 25px;
+        transition: .4s;
+        display: block;
+    
+    }
+    
+    nav a:hover::after{
+        width: 50%;
+        opacity: 1;
+        display: block;
+    }
+    
+    .logo{
+        width: 30px;
+        
+        position: absolute;
+        left: -1px;
+        transform: translate(-50%);
+        top: -5px;
+        float: left; /* เพิ่มบรรทัดนี้ */
+    }
+
+    .profile  {
+        border-radius: 35%;
+        overflow: hidden;
+        height: 250px;
+        border-style: dotted; color: aliceblue;
+        
+    
+    }
+    .profile img{
+        object-fit: cover;
+        transition: transform 0.1s;
+        height: 100%;
+        
+    }
+    .profile:hover img{
+        transform: scale(1.5);
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #ffffff; /* สีพื้นหลัง */
+        color: #000000; /* สีข้อความ */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* เพื่อให้มีการเปลี่ยนสีเมื่อนำเมาส์ไปชี้ */
+      }
+      
+      /* การเมาส์ไปชี้ปุ่ม */
+      .btn:hover {
+        background-color: #000000; /* สีพื้นหลังเมื่อนำเมาส์ไปชี้ */
+        color: #ffffff;
+      }
+      .who {
+       
+        background-color: #F0F0F0;
+        font-size: 16px;
+        color: #333;
+        border: 1px solid #999;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex; /* เปิดใช้งาน Flexbox */
+        justify-content: center; /* จัดกล่องแนวนอนให้อยู่กลาง */
+        align-items: center; /* จัดกล่องแนวตั้งให้อยู่กลาง */
+      }
+
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .school-name-1 {
+        width: 100px;
+        height: 50px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        margin: 0px 10px 10px 0px;
+      }
+      
+      .school-name-2 {
+        width: 100px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        margin: 0px 0px 10px 10px;
+      }
+      
+      .bottom{
+        background-color: #b3b3b3;
+        
+        size: 100%;
+      }
+      .bottom1{
+        background-color: #b3b3b3;
+        
+        size: 100%;
+      }
+      
+      
